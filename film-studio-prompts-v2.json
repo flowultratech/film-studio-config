@@ -1,5 +1,5 @@
 {
- "version": "1.0.2",
+ "version": "1.0.3",
  "blocks": {
   "step1.plot.role": [
    "คุณเป็น Showrunner ออกแบบโครงละครสั้นแนวตั้ง (Vertical Drama) ที่ \"คุมความอยากรู้ของคนดู\""
@@ -44,7 +44,7 @@
    "",
    "ตอบกลับเป็น JSON object เท่านั้น (ห้าม markdown) ตามโครงสร้าง:",
    "{\"title\":\"ชื่อเรื่องภาษา{titleLang}\",\"plot\":\"พล็อตภาษาไทย\",\"bible\":{\"premise\":\"\",\"centralMystery\":\"\",\"plannedPayoff\":\"\",\"foreshadowPlan\":\"\",\"toneStyle\":\"\",\"endingState\":\"\",\"setups\":[{\"element\":\"\",\"capability\":\"\",\"seedEp\":1,\"payoffEp\":4}]},\"characters\":[{\"name\":\"ชื่อตัวละครภาษาไทย\",\"description\":\"บุคลิกภาษาไทย\",\"motivation\":\"แรงขับของตัวละคร\",\"role\":\"lead\",\"prompt\":\"{example} [โครงหน้า/ผิว/ตา-คิ้ว/จมูก-ปาก/ทรงผม เฉพาะตัวไม่ซ้ำใคร + จุดเด่น1อย่าง + ชุดประจำตัวเข้ายุค/บทบาท มีดีเทล",
-   "— lead เน้นสวย/หล่อแต่หน้าไม่โหล]\",\"voice\":\"ลายเซ็นการพูด\",\"voiceTimbre\":\"เสียงพากย์อังกฤษสั้น เช่น warm youthful female voice, gentle\",\"lookTag\":\"หญิงสาวผมสั้น\"}],\"scenes\":[{\"name\":\"ชื่อฉากภาษาไทย\",\"description\":\"บรรยากาศภาษาไทย\",\"prompt\":\"ภาพฉากบรรยายภาษาไทย ไม่มีตัวละคร\"}],\"objects\":[{\"name\":\"ชื่อของภาษาไทย\",\"description\":\"คำบรรยายภาษาไทย\",\"prompt\":\"ภาพสิ่งของบรรยายภาษาไทยเฉพาะตัวของ ไม่มีคน มือ ฉาก\"}],\"episodes\":[{\"episodeNumber\":1,\"title\":\"ชื่อตอนภาษา{titleLang}\",\"synopsis\":\"เรื่องย่อภาษาไทย\",\"cliffhanger\":\"hook ภาษาไทย\",\"location\":\"ชื่อฉากหลักของตอน (ต้องตรงกับชื่อใน scenes",
+   "— lead เน้นสวย/หล่อแต่หน้าไม่โหล]\",\"voice\":\"ลายเซ็นการพูด\",\"voiceTimbre\":\"เสียงพากย์อังกฤษสั้น เช่น warm youthful female voice, gentle\",\"lookTag\":\"หญิงสาวผมสั้น\"}],\"scenes\":[{\"name\":\"ชื่อฉากภาษาไทย\",\"description\":\"บรรยากาศภาษาไทย\",\"prompt\":\"ภาพฉากบรรยายภาษาไทย\"}],\"objects\":[{\"name\":\"ชื่อของภาษาไทย\",\"description\":\"คำบรรยายภาษาไทย\",\"prompt\":\"ภาพสิ่งของบรรยายภาษาไทย\"}],\"episodes\":[{\"episodeNumber\":1,\"title\":\"ชื่อตอนภาษา{titleLang}\",\"synopsis\":\"เรื่องย่อภาษาไทย\",\"cliffhanger\":\"hook ภาษาไทย\",\"location\":\"ชื่อฉากหลักของตอน (ต้องตรงกับชื่อใน scenes",
    "เป๊ะ)\",\"threadsOpened\":[\"ปมที่ตอนนี้เปิด\"],\"threadsResolved\":[]}]}"
   ],
   "step2.architect.sys": [
@@ -61,7 +61,6 @@
    "— ล็อกให้ Veo พากย์เสียงเดิมทุกช็อต ต่างกันชัดทุกตัว) + 'lookTag'(3-8 คำ เพศ+จุดเด่นจำง่าย ห้ามเสื้อผ้า/สี). ★มนุษย์ทุกตัว(รวมตัวประกอบ/ผู้สูงวัย/คนรับใช้/ตัวร้าย)เป็น{desc}เสมอ(เว้นแต่พล็อตระบุชาติอื่น). ★Casting ตาม role: lead=สวย/หล่อระดับ\"เทพบุตร/นางฟ้า\"งดงามเวอร์เกินคนธรรมดา สวย/หล่อที่สุดในเรื่อง ออร่าดารานำจับตา แต่ต้องมีเอกลักษณ์ \"สวยคนละแบบกัน\" ★ห้ามหน้าโหลกลางๆ — ★ผิว=ขาวเนียน/ขาวอมชมพู/ขาวกระจ่างเป็นค่าเริ่มต้น (โดยเฉพาะ lead พระเอก/นางเอก เน้นผิวขาว) — ห้ามผิวสองสี/ผิวน้ำผึ้ง/ผิวแทน เว้นแต่บทระบุชัด",
    "— หาความต่างของแต่ละตัวจากโครงหน้า/ตา-คิ้ว/จุดเด่น ไม่ใช่จากสีผิว ห้ามรูปไข่-ตาโตซ้ำทุกเรื่อง; support=สวย/หล่อคนละสไตล์กับตัวนำ; villain=หน้าคมออร่าข่ม/เลศนัยเฉพาะตัว ไม่ใช่หน้าโจรการ์ตูน; elder/extra=สมจริงตามวัย/อาชีพ มีเอกลักษณ์ของตัวเอง — ใช้ seed เลือกโครงหน้า(รูปไข่/เหลี่ยม/กลม/หัวใจ/ยาว)+จุดเด่นให้ต่างทุกตัวและต่างจากเรื่องก่อน. ห้าม 2 ตัวพูดหรือหน้าเหมือนกัน",
    "2. ฉาก + สิ่งของ = สร้าง ref เฉพาะที่ต้องรักษาความต่อเนื่อง: สิ่งใดปรากฏ \"มากกว่า 1 ช็อต\" → สร้างเป็น asset (1 สถานที่ = 1 scene ห้ามยุบคนละที่เป็นฉากเดียว ห้ามขาด) + object ทุกชิ้นที่โผล่หลายช็อต. สิ่งที่ออกแค่ \"ช็อตเดียวทั้งเรื่อง\" → ไม่ต้องสร้าง ref (บรรยายใน prompt พอ). ★ทุกสถานที่ที่ตอนใดอ้างถึง (รวม location ของทุกตอน + ที่แวะระหว่างทางในเรื่องแนวเดินทาง) ต้องมีใน scenes[] ครบ ห้ามมี location ที่ไม่มี scene รองรับ. คำอธิบายฉากต้องไม่มีตัวละครปรากฏ",
-   "2.1 ★ภาษาของช่อง prompt (ตัวละคร/ฉาก/สิ่งของ ทุกชิ้น): เขียนเป็นภาษาไทยเท่านั้น ห้ามเขียนภาษาอังกฤษ · prompt ของสิ่งของบรรยายเฉพาะตัวของเอง (รูปทรง วัสดุ สี ขนาด ลักษณะเด่น) ห้ามมีคน มือ ใบหน้า ฉากหลัง หรือมุมกล้อง · prompt ของฉากบรรยายเฉพาะสถานที่ ห้ามมีตัวละคร",
    "3. แผนปม foreshadow→payoff (อุดรูเรื่อง สำคัญ): กำหนด \"จุดเฉลยใหญ่ตอนจบ\" ในใจก่อน แล้ว \"ปูเบาะแส\" ของมันไว้ตั้งแต่ตอนต้นๆ. ของ/ข้อมูล/ตัวช่วยที่จะใช้ตอนหลัง ต้องเคยโผล่หรือถูกเอ่ยถึงในตอนก่อนหน้าก่อน ห้ามโผล่มาเองตอนต้องใช้. ตัวละครที่จะหักหลัง/เปลี่ยนข้าง ต้องมีเบาะแสเลศนัยในตอนก่อน. ★ ปม/เบาะแส/ความลึกลับ/cliffhanger ทุกอันที่ปูไว้ ต้องมีจุดเฉลยหรือคลี่คลายภายในเรื่อง ห้ามปูแล้วทิ้งค้างลอย (เฉลยใหญ่ต้องอธิบายกลไกของสิ่งลึกลับที่ปูไว้ให้ครบ) ★★ cliffhanger ทุกตอนต้องสานต่อในตอนถัดไปและคลี่คลายในเรื่อง ห้ามทิ้ง",
    "— ห้ามปู twist ที่ขัดข้อเท็จจริง/ตัวละครที่วางไว้ (เช่น บอกตัวละครตายทั้งที่ยังมีบทต่อ) — ★★★ การเฉลยต้อง \"เป็นรูปธรรม คนดูเข้าใจ\" ไม่ใช่บอกลอยๆ: เบาะแสรูปธรรม (เลือด/เสียงปริศนา/รอย/ของลึกลับ) ทุกอันต้องเฉลยชัดว่า \"คืออะไร มาจากไหน เพราะอะไร\" — หลักฐานเปิดโปง (เทป/จดหมาย/บันทึก/ภาพ) ต้องระบุ \"เนื้อหาที่มันพิสูจน์ — ใครทำอะไรกับใคร\" ให้คนดูรับรู้จริง ห้าม \"เปิดเทป→วายร้ายทรุด\" โดยคนดูไม่รู้ว่าเทปพูดอะไร — ★ข้อเท็จจริงแกน (ใครเป็นพ่อ-แม่-ลูกของใคร / ใครตายและตายยังไง / ใครติดคุก) ต้องคงเส้นคงวาทุกตอน ห้ามขัดกันเอง",
    "— ระบุความสัมพันธ์ของตัวละครกุญแจ (พ่อ/พยาน/คนรู้ความจริง) ให้ชัดตั้งแต่ปู ไม่กำกวม — ★★★ANTI-EX-MACHINA (กฎเหล็ก พลาดบ่อยสุด): \"ของ/หลักฐาน/เอกสาร/คลิป/อาวุธ/ตัวช่วยที่ใช้ชนะ-เฉลย-เปิดโปงตอน climax\" + \"ตัวตน/แรงจูงใจของวายร้าย\" + \"คำตอบของ centralMystery\" — ทุกอย่างนี้ต้องถูกปลูกเป็น \"ช็อตจริงที่คนดูเห็น/ได้ยิน\" ในตอนก่อนหน้า (ก่อนถึง climax) ห้ามโผล่/เฉลยครั้งแรกตอนจบ. centralMystery + แรงจูงใจวายร้าย ต้องเฉลยบนจอจริง (บทพูด/ภาพ) ไม่ใช่เก็บไว้ในใจ/ในแผน — mark resolved ได้เฉพาะปมที่มีช็อตเฉลยจริงเท่านั้น",
@@ -348,7 +347,7 @@
    "2. ห้ามเปลี่ยนชื่อตัวละคร/ฉาก/ของ เดิม ถ้าคำสั่งไม่ได้สั่ง (ชื่อ = กุญแจจับคู่ ref/ช็อต — เปลี่ยนแล้วหลุด)",
    "3. แก้เฉพาะที่คำสั่งบอก (พล็อต/บุคลิก-รูปลักษณ์ตัวละคร/เรื่องย่อ/ปม รายตอน) ให้สอดคล้องกันทั้งเรื่อง",
    "4. **ห้ามใส่ shots** — คืนแค่ระดับโครง (แต่ละตอนมี title/synopsis/cliffhanger/location) · ช็อตจะคงของเดิมไว้อัตโนมัติ",
-   "5. ข้อความภาษาไทย · location ของตอนตรงกับชื่อ scene · prompt ของตัวละคร/ฉาก/สิ่งของที่เขียนใหม่ต้องเป็นภาษาไทยเท่านั้น สิ่งของบรรยายเฉพาะตัวของ ไม่มีคน มือ ฉาก",
+   "5. ข้อความภาษาไทย · location ของตอนตรงกับชื่อ scene",
    "",
    "ตอบ JSON เท่านั้น (ห้าม markdown):",
    "{\"title\":\"ชื่อเรื่อง\",\"plot\":\"พล็อต\",\"characters\":[{\"name\":\"\",\"description\":\"\",\"prompt\":\"\",\"voice\":\"\",\"lookTag\":\"\"}],\"scenes\":[{\"name\":\"\",\"description\":\"\",\"prompt\":\"\"}],\"objects\":[{\"name\":\"\",\"description\":\"\",\"prompt\":\"\"}],\"episodes\":[{\"episodeNumber\":1,\"title\":\"\",\"synopsis\":\"\",\"cliffhanger\":\"\",\"location\":\"\"}]}"
@@ -621,6 +620,53 @@
   ],
   "step3.scene.shotLine": [
    "- ฉากที่ผู้ใช้กำหนดเอง (ต้องใช้ชื่อนี้เป๊ะ และให้ช็อตส่วนใหญ่เกิดในฉากเหล่านี้): {sceneNames}"
+  ],
+  "step3.looks.sheet": [
+   "Character concept sheet of the SAME person: \"{prompt}\".",
+   "Composite shot on a continuous solid gray background.",
+   "TOP (DOMINANT — fills the upper two-thirds of the frame): a large, richly detailed close-up portrait from head to shoulders, front-facing, {faceBrief}, {skinLine}. This portrait is the most important element — render the face at maximum detail and likeness, never generic.",
+   "BOTTOM (a smaller strip): Three full-body views side-by-side (front view, side profile, and back view), standing in a natural pose showing the full outfit and shoes head-to-toe, wearing an intricately detailed era-and-role-appropriate costume — visible fabric texture, tailoring and signature details, high-end costume design.",
+   "Perfect consistency: same face, hair style, hair color, physique, and clothing in every angle.",
+   "{faithfulLine} Render the costume faithfully.{heroLine}",
+   "{medium}, {glam}, {styleKeywords}.",
+   "No text or labels."
+  ],
+  "step3.looks.face0": [
+   "the face exactly as written in the description above — keep its stated features, age, skin tone and ethnicity literally; do not beautify, idealize or make it plainer"
+  ],
+  "step3.looks.face1": [
+   "a noticeably plain, unglamorous face with irregular imperfect features — uneven or small eyes, a broad or crooked nose, heavy jaw, blemishes and rough skin; clearly NOT attractive, yet a real, human, non-grotesque everyday person — this overrides any words like handsome, beautiful, pretty, gorgeous, หล่อ or สวย in the description above"
+  ],
+  "step3.looks.face2": [
+   "a very ordinary, unremarkable everyday face — average features with natural imperfections, like a random person on the street; not attractive, not a model — this overrides any words like handsome, beautiful, pretty, gorgeous, หล่อ or สวย in the description above"
+  ],
+  "step3.looks.face3": [
+   "a normal, pleasant-looking everyday person — natural average features, believable and approachable, neither plain nor glamorous — this overrides any words like handsome, beautiful, pretty, gorgeous, หล่อ or สวย in the description above"
+  ],
+  "step3.looks.face4": [
+   "a good-looking, attractive person — appealing balanced features and a nice face, but still natural and believable as a real person, not an idol"
+  ],
+  "step3.looks.face5": [
+   "a strikingly beautiful/handsome drama-star face — exquisite, captivating, head-turning celebrity-level good looks"
+  ],
+  "step3.looks.style0.photoreal": [
+   "editorial cinematic photograph of real people, shot on 85mm lens with shallow depth of field and creamy bokeh, soft directional key light with subtle rim separation, controlled deep-but-detailed shadows, filmic slightly-desaturated rich color grade, the ethnicity and skin tone exactly as described with real matte natural texture and visible pores (never airbrushed or plastic-CGI), subtle 35mm film grain, premium prime-time streaming-drama cinematography"
+  ],
+  "step3.looks.style0.epic": [
+   "editorial cinematic photograph of a real person in an elaborate over-the-top fantasy costume, the ethnicity and skin tone exactly as described with real matte natural texture and visible pores, epic magical atmosphere with restrained glowing magical light and floating particles, fantasy hair colors allowed, dramatic cinematic fantasy lighting, shot on 85mm f1.4 shallow depth of field, rich vibrant filmic color grade, subtle film grain — a real photographed person in fantasy costume, NOT a 3D render, NOT CGI, NOT a game character, NOT anime, NOT oil painting"
+  ],
+  "step3.looks.style0.gothic": [
+   "editorial cinematic photograph of a real person, gothic dark fantasy vampire aesthetic, the ethnicity and skin tone exactly as described with real matte natural texture and visible pores, candlelit moonlit moody atmosphere, ornate baroque-Victorian gothic costume (gold embroidery, lace, crosses, chains) or gothic lolita gown, fantasy elements allowed (faint crimson or pale-violet glowing eyes, dark aura), shot on 85mm f1.4 shallow depth of field and creamy bokeh, soft key light with rim separation, filmic desaturated rich color grade, subtle film grain — a real photographed person, NOT a 3D",
+   "render, NOT CGI, NOT anime"
+  ],
+  "step3.looks.neg0": [
+   "3D game render, video game character art, anime, donghua, doll-like CGI, glossy plastic skin, oil painting, "
+  ],
+  "step3.looks.negGlam": [
+   "idol, fashion model, celebrity, glamour, flawless perfect skin, beauty filter, airbrushed, K-pop idol face, perfectly symmetrical features, "
+  ],
+  "step3.looks.negIdol": [
+   "idol glamour, beauty filter, airbrushed skin, "
   ],
   "step4.shots.userPrompt": [
    "",
