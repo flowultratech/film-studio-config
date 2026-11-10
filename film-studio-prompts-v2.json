@@ -1,5 +1,5 @@
 {
- "version": "1.0.3",
+ "version": "1.0.4",
  "blocks": {
   "step1.plot.role": [
    "คุณเป็น Showrunner ออกแบบโครงละครสั้นแนวตั้ง (Vertical Drama) ที่ \"คุมความอยากรู้ของคนดู\""
@@ -1019,6 +1019,80 @@
   ],
   "step4.image.defaultStyle": [
    "ภาพยนตร์สมจริง"
+  ],
+  "step4.rescue.offscreenRule": [
+   "Keep the drama and tension, but move every violent, gory or threatening moment off-screen: show the evidence or aftermath (an overturned chair, a dropped weapon lying far from anyone, drag marks, a broken lamp), a shape covered by a white sheet, shadows on a wall, a door left ajar, and the shocked or frightened faces of the characters;",
+   "never show wounds, blood, gore, a dead body, a weapon aimed at or touching a person, or the moment of impact."
+  ],
+  "step4.rescue.offscreenSys": [
+   "You rewrite a {kind} generation prompt so it passes a content safety filter. {rule}",
+   "Replace anything romantic or sexual with neutral wording. Keep the same structure, headings, reference image numbers, character names, camera, layout, left/right positions and dialogue lines. The prompt may be in Thai: keep its language. Keep it the same length or shorter. Output only the rewritten prompt, no notes, no markdown."
+  ],
+  "step4.rescue.videoHead": [
+   "REWRITE THIS VEO PROMPT:"
+  ],
+  "step4.rescue.videoAgain": [
+   "Shorten this Veo prompt to under 2200 characters. Keep names, camera, duration, dialogue lines and the silence rule; keep it policy-safe. Output only the prompt:"
+  ],
+  "step4.rescue.videoSys": [
+   "You rewrite video-generation prompts for Google Veo so they pass its content policy and fit its token limit. Rules: (1) Remove or soften anything that may be blocked: blood, gore, wounds, weapons aimed at people, explicit violence or impact, torture, sexual content, nudity, minors in danger, self-harm, drugs, hate symbols, real people, real brands.",
+   "Replace with implied, off-screen or restrained versions: a shove instead of a beating, a tense stare instead of a stab, a reaction shot instead of the impact, dust or sparks instead of blood.",
+   "(2) Keep every character name, the camera angle and movement, the style line, every spoken dialogue line (the text inside double quotes) and any silence rule exactly as given. Keep the headings STYLE, CAST, SHOT and RULE and keep the language of the prompt (it is mostly Thai); shorten the wording if needed.",
+   "(3) Total output under 2500 characters. (4) Output only the rewritten prompt as plain text: no explanation, no markdown fences, no preamble."
+  ],
+  "step4.camera.rule.revenge": [
+   " || CAMERA PACK REVENGE: the dominant or cruel person in low angle, the humiliated one in high angle (kneeling, on the floor); at a slap, twist or reveal add an extreme close-up of red eyes, a smirk or a clenched fist; high-contrast light."
+  ],
+  "step4.camera.rule.kromance": [
+   " || CAMERA PACK ROMANCE: intimate over-the-shoulder with a melted background; when one gazes at the other, a POV shot of their face or lips; close profile two-shot with faces turned to each other; slow push-in or slow orbit at a hug or kiss."
+  ],
+  "step4.camera.rule.period": [
+   " || CAMERA PACK PERIOD: open wide on the place (fields, wooden house, old market) with people small in it; often frame through a wooden doorway, window or bamboo slats; when people sit on the floor keep the camera low at floor level, never looking down; natural golden light."
+  ],
+  "step4.camera.rule.horror": [
+   " || CAMERA PACK HORROR: in silent shots watch the character from hiding (behind bushes, a pillar, darkness) as if something stares, with the person at the frame edge and empty dark space; dutch angle when the uncanny starts; at most once a scene a top-down view; never hide the face of a speaker."
+  ],
+  "step4.camera.rule.crime": [
+   " || CAMERA PACK CRIME: handheld tracking behind a moving character; ground-level shots with shoes, a dropped key or a torn photo in the foreground; reflection shots in a car mirror, puddle or window; gritty neo-noir light."
+  ],
+  "step4.camera.cam.revenge": [
+   "Steady camera, slow push-in; snap zoom onto a face only at a slap, twist or reveal."
+  ],
+  "step4.camera.cam.kromance": [
+   "Slow intimate push-in; slow orbit around the couple at a hug or kiss, never shaky."
+  ],
+  "step4.camera.cam.period": [
+   "Calm camera at floor or eye level, slow drift and gentle push-in, never shaky."
+  ],
+  "step4.camera.cam.horror": [
+   "Slow creeping camera as if someone watches; slight dutch tilt when it turns eerie."
+  ],
+  "step4.camera.cam.crime": [
+   "Handheld camera with slight shake, tracking the character, quick reframes."
+  ],
+  "step4.camera.light.revenge": [
+   ", dramatic high-contrast light"
+  ],
+  "step4.camera.light.kromance": [
+   ", soft rim light"
+  ],
+  "step4.camera.light.period": [
+   ", natural golden light, light film grain"
+  ],
+  "step4.camera.light.horror": [
+   ", low-key light, deep shadows"
+  ],
+  "step4.camera.light.crime": [
+   ", gritty neo-noir light"
+  ],
+  "step4.stream.rule": [
+   " || STREAMING-SERIES LOOK: a lone speaker with a listener nearby is a dirty single (a blurred sliver of the listener at the frame edge); scene openers and power moments use symmetrical center framing; whoever holds power in low angle, the losing side in high angle; at most one frame-within-a-frame (doorway, window) and one negative-space shot per scene."
+  ],
+  "step4.stream.cam": [
+   "Slow push-in at a realization; rack focus from the foreground to the face; track walking characters."
+  ],
+  "step4.stream.light": [
+   ", anamorphic 35mm, rim light, moody color grade"
   ],
   "step5.video.style": [
    "STYLE: {style}"
