@@ -1,5 +1,5 @@
 {
- "version": "1.0.4",
+ "version": "1.0.5",
  "blocks": {
   "step1.plot.role": [
    "คุณเป็น Showrunner ออกแบบโครงละครสั้นแนวตั้ง (Vertical Drama) ที่ \"คุมความอยากรู้ของคนดู\""
@@ -1192,6 +1192,151 @@
   ],
   "step5.accent.vulgar": [
    "หยาบคาย"
+  ],
+  "step6.caption.system": [
+   "คุณเป็นแอดมินเพจหนังสั้นที่เขียนแคปชั่นให้คนอยากกดดู อ่านง่ายบนมือถือ ไม่เฉลยเรื่อง ตอบเป็น JSON ตามรูปแบบที่กำหนดเท่านั้น"
+  ],
+  "step6.caption.head": [
+   "เขียนแคปชั่นสำหรับโพสต์วิดีโอ{ep} ของหนังสั้นเรื่องนี้ 3 แบบ ใช้ลงโซเชียลได้ทุกที่"
+  ],
+  "step6.caption.headEp": [
+   " \"ตอนที่ {n}\""
+  ],
+  "step6.caption.story": [
+   "[เรื่อง] {title} — {logline}"
+  ],
+  "step6.caption.genres": [
+   "[แนว] {genres}"
+  ],
+  "step6.caption.genreSep": [
+   " · "
+  ],
+  "step6.caption.epMany": [
+   "[ตอนนี้] ตอนที่ {n} จาก {total}: {title} — {summary}"
+  ],
+  "step6.caption.epOne": [
+   "[สรุป] {summary}"
+  ],
+  "step6.caption.body": [
+   "[เนื้อเรื่องของวิดีโอนี้] {body}"
+  ],
+  "step6.caption.ending": [
+   "[วิดีโอนี้จบด้วย — ห้ามบอกในแคปชั่น] {ending}"
+  ],
+  "step6.caption.statusLast": [
+   "[สถานะ] ตอนสุดท้ายของเรื่อง"
+  ],
+  "step6.caption.statusMore": [
+   "[สถานะ] ยังมีตอนต่อไป ชวนให้ติดตาม"
+  ],
+  "step6.caption.kinds": [
+   "[แบบที่ต้องเขียน]",
+   "\"hook\" ชวนดู: บรรทัดแรกเป็นประโยคที่ทำให้หยุดเลื่อน / 1-2 บรรทัดบอกว่าตัวละครเจออะไร / ปิดด้วยคำชวนดูหรือชวนติดตาม / ยาวไม่เกิน 300 ตัวอักษร",
+   "\"recap\" เล่าย่อ: เล่าเรื่องของวิดีโอนี้ 2-4 ประโยคแบบไม่เฉลยตอนจบ{recapEp} / ยาวไม่เกิน 500 ตัวอักษร",
+   "\"short\" สั้นๆ: ประโยคเดียวไม่เกิน 80 ตัวอักษร ให้คนอยากรู้ต่อ"
+  ],
+  "step6.caption.recapEp": [
+   " บอกว่าเป็นตอนที่เท่าไร"
+  ],
+  "step6.caption.rules": [
+   "[กฎ]",
+   "- เขียนเป็นภาษา{lang}",
+   "- ห้ามเฉลยจุดหักมุมหรือตอนจบของเรื่อง",
+   "- ท้ายทุกแบบใส่แฮชแท็ก 3-5 อัน: {tags} แล้วตามด้วยแฮชแท็กแนวเรื่องที่คนใช้จริง",
+   "- เว้นบรรทัดให้อ่านง่ายบนมือถือ ใช้อีโมจิได้ไม่เกิน 2 ตัวต่อแบบ"
+  ],
+  "step6.caption.langTh": [
+   "ไทยแบบคนไทยโพสต์เอง"
+  ],
+  "step6.caption.langEn": [
+   "อังกฤษ"
+  ],
+  "step6.caption.tagEp": [
+   " #EP{n}"
+  ],
+  "step6.caption.reply": [
+   "ตอบเป็น JSON อย่างเดียว: {\"hook\":\"...\",\"recap\":\"...\",\"short\":\"...\"}"
+  ],
+  "step6.cover.head": [
+   "A theatrical movie poster (one-sheet) for {what} \"{title}\", {shape} {ratio} frame, made to stop the scroll in a social feed."
+  ],
+  "step6.cover.whatEp": [
+   "episode {n} of the drama series"
+  ],
+  "step6.cover.whatFilm": [
+   "the film"
+  ],
+  "step6.cover.vertical": [
+   "vertical"
+  ],
+  "step6.cover.horizontal": [
+   "horizontal"
+  ],
+  "step6.cover.story": [
+   "Story of this video (use it for mood and the moment to show, never write it): {story}"
+  ],
+  "step6.cover.cast": [
+   "Cast — every face, hairstyle, body and outfit MUST match the reference image exactly: {list}."
+  ],
+  "step6.cover.castItem": [
+   "reference image {n} = {name}{persona}"
+  ],
+  "step6.cover.castPersona": [
+   " ({persona})"
+  ],
+  "step6.cover.castSep": [
+   "; "
+  ],
+  "step6.cover.setting": [
+   "Setting — the location in reference image {n} ({name})."
+  ],
+  "step6.cover.hero": [
+   "Hero composition: the lead fills the frame large and close to the camera with one strong emotional expression and a clear silhouette, the other characters layered behind at smaller scale, the setting behind them."
+  ],
+  "step6.cover.moment": [
+   "Show the most intriguing moment of this episode without revealing how it ends. Dramatic key lighting with deep shadows, rich colour grade, shallow depth of field, major studio finish."
+  ],
+  "step6.cover.letter": [
+   "Title lettering is part of this design: write{parts} near the {side} of the frame, matching the mood of the story. Copy every character exactly as given (Thai spelling must be perfect), make it sharp and easy to read on a phone."
+  ],
+  "step6.cover.letterTitle": [
+   " the title \"{title}\" in big, bold, stylish letters"
+  ],
+  "step6.cover.letterAnd": [
+   " and"
+  ],
+  "step6.cover.letterHook": [
+   " the line \"{hook}\" in smaller letters"
+  ],
+  "step6.cover.calmSide": [
+   "Keep the {side} part of the frame simpler and less busy — a title will be placed later."
+  ],
+  "step6.cover.calmTop": [
+   "Keep the top third calmer and less busy so a title can be added later."
+  ],
+  "step6.cover.sideTop": [
+   "top"
+  ],
+  "step6.cover.sideCenter": [
+   "center"
+  ],
+  "step6.cover.sideBottom": [
+   "bottom"
+  ],
+  "step6.cover.styleReal": [
+   "Style: {style}. Photorealistic film still, not an illustration."
+  ],
+  "step6.cover.styleDrawn": [
+   "Style: {style}. Match the art style of the reference images."
+  ],
+  "step6.cover.single": [
+   "One single image only — no panels, collage, split screen or character-sheet layout."
+  ],
+  "step6.cover.noOtherText": [
+   "No other text, numbers, logos or watermarks anywhere else."
+  ],
+  "step6.cover.noText": [
+   "Do not draw any text, letters, numbers, titles, subtitles, logos or watermarks."
   ]
  }
 }
