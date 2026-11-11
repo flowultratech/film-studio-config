@@ -1,5 +1,5 @@
 {
- "version": "1.0.5",
+ "version": "1.0.6",
  "blocks": {
   "step1.plot.role": [
    "คุณเป็น Showrunner ออกแบบโครงละครสั้นแนวตั้ง (Vertical Drama) ที่ \"คุมความอยากรู้ของคนดู\""
@@ -28,6 +28,125 @@
    "field \"genres\" เป็น array ของแนวเรื่อง เลือกจากรายการนี้เท่านั้น ใช้คำให้ตรงเป๊ะ: {allGenres}",
    "★ห้าม emoji: ทุกช่องข้อความ (ชื่อเรื่อง · ชื่อตอน · เรื่องย่อ · บทพูด · เสียงบรรยาย · คำบรรยาย) ใช้ตัวอักษร ตัวเลข และเครื่องหมายวรรคตอนปกติเท่านั้น ห้ามใส่ emoji หรือสัญลักษณ์ภาพทุกชนิด (เช่น 😍✨🔥💖👉)",
    "ตอบกลับเป็น JSON เท่านั้น (ห้าม markdown) : {\"ideas\":[{\"title\":\"ชื่อเรื่องสั้น\",\"genres\":[\"แนวเรื่องไทย\"],\"plot\":\"{word} 1-2 ประโยค\"}]}"
+  ],
+  "step1.review.director": [
+   "คุณคือโชว์รันเนอร์ซีรีส์สั้นแนวตั้งระดับโลก ทุกการตอบโต้ทำในฐานะมือโปร",
+   "หัวใจ: ทำให้คนดูหยุดเลื่อนและดูจนจบ ตอนจบของทุกตอนต้องเป็นไปตาม ENDING RULE ในบริบท กฎนี้ชนะกฎอื่นทุกข้อ",
+   "",
+   "กฎการเล่าเรื่อง:",
+   "หนึ่ง ตัดเข้าเรื่องทันที ฉากแรกเริ่มกลางเหตุการณ์ที่ตัวละครหลักกำลังเผชิญและพูดคุยกันอยู่ ห้ามเกริ่นนำ ห้ามทีเซอร์ ห้ามโชว์ฉากไคลแมกซ์ล่วงหน้า ห้ามเปิดด้วยภาพบรรยากาศเปล่าๆ",
+   "สอง โครงในตอน 5 จังหวะ: HOOK, SETUP, TURN, ESCALATE, PAYOFF — ถ้าไม่มี ENDING RULE: ตอนไม่จบให้ PAYOFF เป็นรางวัลเล็ก+ปัญหาใหม่ จบค้าง ห้ามคลี่ปมหลัก เฉพาะตอนจบจึงเฉลย",
+   "สาม ทุกฉากต้องขับเคลื่อนเรื่อง ไม่จำเป็นให้ตัดทิ้ง",
+   "สี่ ตัวละครทำทุกอย่างจากแรงจูงใจตัวเอง ห้ามทำเพราะพล็อตต้องการ",
+   "ห้า แสดงให้เห็นห้ามบอกตรงๆ เล่าผ่านการกระทำ สายตา วัตถุ",
+   "หก บทพูดสั้น กระชับ เหมือนคนคุยจริง เผื่อที่ให้รีแอคชั่น",
+   "เจ็ด รักษาความต่อเนื่องหน้าตา ชุด เสียง อารมณ์ และสถานะความสัมพันธ์ ข้ามฉากและข้ามตอนตาม Reference Bible ความสัมพันธ์คืบเป็นขั้น ห้ามกระโดด",
+   "แปด ปฏิบัติตามค่าที่ผู้ใช้กำหนดอย่างเคร่งครัด",
+   "เก้า ปมเรื่องต้องถ่ายให้เห็นได้จริง อดีตต้องมีแฟลชแบ็กหรือหลักฐาน",
+   "สิบ ตั้งคำถามหลักของซีรีส์ที่คนดูอยากรู้จนตอนจบ เฉลยทีละขั้นแบบบันได ห้ามเฉลยหมดเร็ว หลอกได้แต่ต้องมีรากในเรื่อง",
+   "สิบเอ็ด ทุกฉากมีจุดเปลี่ยนและท้ายฉากทิ้งปม ทุกตอนสถานะเรื่องต้องเปลี่ยนอย่างน้อย 1 อย่าง ห้ามมีตอนที่ไม่คืบ",
+   "สิบสอง เดิมพันสูงขึ้นทุกตอน ห้ามทะเลาะเรื่องเดิมซ้ำโดยไม่คืบ คลิฟแฮงเกอร์มาจากเรื่องจริง ห้ามซ้ำรูปแบบติดกัน",
+   "สิบสาม บทพูดมีความหมายซ่อน ห้ามใช้บทพูดเล่าเรื่องแทนภาพ",
+   "",
+   "หลักการตากล้อง:",
+   "- ห้ามเกิน 8 ช็อตต่อฉาก",
+   "- HOOK (ฉากเปิด): 2-3 ช็อต ตัดเข้าเหตุการณ์ทันที ช็อตแรกต้องมีตัวละครและบทพูดเลย ห้ามเปิดด้วยภาพดีเทลหรือภาพบรรยากาศเปล่าๆ",
+   "- SETUP (ปูเรื่อง): 2-4 ช็อต ต้องมีภาพกว้างบอกสถานที่",
+   "- TURN (จุดพลิก): 3-5 ช็อต ไล่ภาพกว้างไปแคบ จบที่ใบหน้าเพื่อจับอารมณ์",
+   "- ESCALATE (เร่งเดิมพัน): 4-8 ช็อต ตัดสลับสั้นๆ สร้างจังหวะเร่ง",
+   "- PAYOFF (จ่ายคืนอารมณ์): 2-4 ช็อต เน้นใบหน้าค้างนาน กล้องซูมเข้าช้าๆ",
+   "",
+   "เกณฑ์จำนวนช็อต:",
+   "- ฉากบรรยากาศหรือพูดคนเดียวใช้ 1 ช็อตพอ",
+   "- ฉากสนทนา 2 คน ใช้ช็อตข้ามไหล่คู่ได้",
+   "- ใช้ช็อตสูงสุดเฉพาะฉากที่คุ้มค่าเท่านั้น",
+   "",
+   "กฎเพิ่มเติม:",
+   "- ฉากคนเดียว: ห้ามข้ามไหล่ ให้ใช้ POV หรือภาพแทรกสิ่งของ",
+   "- ฉากสนทนา 2 คน: ให้บทสนทนาอยู่ในช็อตเดียวที่เห็นหน้าทั้งคู่ (ไม่เกิน 8 ช็อต) ต้องมีรีแอคชั่นคนฟัง",
+   "- การกระทำ: ใช้การเคลื่อนกล้อง (dolly/handheld)",
+   "- ฉากเงียบ: กล้องนิ่ง"
+  ],
+  "step1.review.rubric": [
+   "VIRAL SCORE RUBRIC (0-100): Hook 15 (first seconds stop the scroll), Character 10 (actions driven by motivation), Emotion 15, Conflict 10, Escalation 10 (stakes rise every episode), Curiosity 10 (BINGEABILITY: clear reason to watch the next episode), Twist 10 (ROOTED IN THE STORY, not random), Payoff 10 (every episode gives a mini-payoff; only the finale resolves the main secret), Shareable Moment 5, Ending 5 (non-final episodes end on strong varied cliffhangers; the finale resolves fully)."
+  ],
+  "step1.review.retention": [
+   "Retention check - report any failure in weakPoints: slow hook, boring stretch, over-long dialogue, dialogue that narrates what the picture already shows instead of carrying subtext, episode where story state does not change, repeated conflict without progression, weak or repeated cliffhanger, main secret revealed too early."
+  ],
+  "step1.review.judge": [
+   "Judge strictly as a vertical-drama showrunner. Respond JSON only:",
+   "{",
+   "\"total\": number,",
+   "\"scores\": { \"hook\": n, \"character\": n, \"emotion\": n, \"conflict\": n, \"escalation\": n, \"curiosity\": n, \"twist\": n, \"payoff\": n, \"shareable\": n, \"ending\": n },",
+   "\"weakPoints\": [\"ไทย\"],",
+   "\"recommendations\": [\"ไทย\"]",
+   "}",
+   "weakPoints และ recommendations เป็นภาษาไทยอย่างละ 2-5 ข้อ สั้น ชี้เป้าฉากหรือตอนที่มีปัญหา"
+  ],
+  "step1.review.user": [
+   "REVIEW STORY CONTENT:",
+   "{context}"
+  ],
+  "step1.review.title": [
+   "TITLE: {v}"
+  ],
+  "step1.review.structure": [
+   "STORY STRUCTURE: drama"
+  ],
+  "step1.review.endingRule": [
+   "ENDING RULE: Each episode ends on a NEW EVENT that opens a new question, never just to be continued; only the final episode pays off the main conflict."
+  ],
+  "step1.review.finalEnding": [
+   "FINAL EPISODE ENDING (chosen by the user, judge the ending by this): {v}"
+  ],
+  "step1.review.genre": [
+   "GENRE: {v}"
+  ],
+  "step1.review.size": [
+   "STRUCTURE: {eps} Episodes, {shots} Shots per Episode"
+  ],
+  "step1.review.plot": [
+   "PLOT: {v}"
+  ],
+  "step1.review.premise": [
+   "PREMISE: {v}"
+  ],
+  "step1.review.mystery": [
+   "CENTRAL MYSTERY: {v}"
+  ],
+  "step1.review.payoff": [
+   "PLANNED PAYOFF: {v}"
+  ],
+  "step1.review.endState": [
+   "ENDING STATE: {v}"
+  ],
+  "step1.review.outlines": [
+   "EP OUTLINES:"
+  ],
+  "step1.review.epLine": [
+   "EP{n} {title}: {syn}"
+  ],
+  "step1.review.epCli": [
+   " | จบตอน: {cli}"
+  ],
+  "step1.review.actors": [
+   "ACTORS:"
+  ],
+  "step1.review.actorLine": [
+   "- {name}: {desc}, want={want}"
+  ],
+  "step1.improve.user": [
+   "ปรับปรุงพล็อตเรื่องเดิมโดยอ้างอิงจากบทวิจารณ์ดังนี้:",
+   "พล็อตเดิม: {plot}",
+   "จุดอ่อนที่พบ:",
+   "{weak}",
+   "คำแนะนำในการแก้:",
+   "{recs}",
+   "",
+   "บริบทโปรเจกต์: {context}"
+  ],
+  "step1.improve.sys": [
+   "เขียนพล็อตเรื่องใหม่เป็นภาษาไทย 1-2 ย่อหน้า (3-7 ประโยค) ที่แก้จุดอ่อนทุกข้อที่ระบุ คงตัวละครและแก่นเรื่องเดิมไว้ ตอบเป็นเนื้อพล็อตล้วนๆ เท่านั้น ห้ามมีคำเกริ่น คำทักทาย หรือหัวข้อนำหน้า ให้ประโยคแรกเป็นเนื้อเรื่องทันที"
   ],
   "step2.architect.user": [
    "{roleLineOf}",
@@ -396,6 +515,56 @@
   ],
   "step2.fix.stubObject": [
    "สิ่งของ {objectName}"
+  ],
+  "step2.ending.ruleOpen": [
+   "OPEN ENDING: settle the main conflict and give the main characters a clear final state, then let the last moment leave one quiet unanswered feeling or question for the viewer to think about. It must still feel like THE END: no new problem, no new enemy, no hook for another episode."
+  ],
+  "step2.ending.ruleNext": [
+   "TO BE CONTINUED ENDING (the last episode for now, NOT the end of the story): pay off the main conflict of this episode with emotional satisfaction, then end the last scene on a strong hook for the next episode: a shocking reveal, a new threat or an unanswered question that makes viewers want the next part. Do not fully reveal the main secret."
+  ],
+  "step2.ending.outlineOpen": [
+   "- FINAL episode: open ending - settle the main conflict, then leave one quiet unanswered feeling; no new problem, no hook."
+  ],
+  "step2.ending.outlineNext": [
+   "- LAST episode for now (the story continues): pay off this episode, then end on a strong hook (a shock reveal, a new threat or an open question); keep the main secret."
+  ],
+  "step2.ending.architect": [
+   "",
+   "★★★ ตอนจบของเรื่องที่ผู้ใช้เลือก (สำคัญสุด ทับกฎเรื่องตอนสุดท้าย/จบสนิทบริบูรณ์/ห้ามปลายเปิด/ปิดทุกปม/ห้าม hook ภาคต่อ ทุกข้อด้านบนที่ขัดกัน — ใช้กับตอน {lastEp} ซึ่งเป็นตอนสุดท้าย): {rule}",
+   "{detail}"
+  ],
+  "step2.ending.detailOpen": [
+   "ตอน {lastEp}: ยังต้องคลี่ปมหลักและเฉลยปมที่เปิดไว้ให้ครบเหมือนเดิม (threadsOpened ของตอนสุดท้าย = []) แต่ช่วงท้ายสุดไม่ต้องปิดทุกเส้นแบบสมหวังโปร่ง ให้ทิ้งความรู้สึกหรือคำถามเล็กๆ 1 อย่างให้คนดูคิดต่อ — ห้ามเปิดปัญหาใหม่ ห้ามตัวร้ายใหม่ ห้าม hook ไปตอนต่อ · cliffhanger ของตอนสุดท้าย = ภาพหรือความรู้สึกสุดท้ายที่ทิ้งไว้ ไม่ใช่ปมไปตอนต่อ · endingState = สภาพจบที่ชัดเจนของตัวละครหลัก + ความรู้สึกที่ทิ้งไว้"
+  ],
+  "step2.ending.detailNext": [
+   "ตอน {lastEp} ไม่ใช่ตอนจบของทั้งเรื่อง (ยังมีตอนต่อไป): คลี่ความขัดแย้งหลักของตอนนี้ให้คนดูรู้สึกคุ้ม แล้วจบตอนด้วย hook แรงไปตอนถัดไป (เปิดเผยช็อก/ภัยใหม่/คำถามค้าง) · cliffhanger ของตอนสุดท้าย = hook ไปตอนต่อไป ไม่ใช่บทสรุป · ห้ามเฉลยความลับใหญ่ (centralMystery) จนหมด · threadsOpened ของตอนสุดท้ายใส่ปมใหม่ที่ทิ้งไว้ได้ 1-2 ปม และปมที่ยังไม่เฉลยปล่อยค้างไว้ได้ ไม่ต้องใส่ใน threadsResolved · endingState = สภาพเรื่องเมื่อจบตอนนี้ + ปมที่ทิ้งไว้ให้ตอนต่อไป"
+  ],
+  "step2.ending.doctor": [
+   "",
+   "★★★ ตอนจบของเรื่องที่ผู้ใช้เลือก (ทับคำว่า จบดี และกฎปิดเรื่องข้อใดที่ขัดกัน — ใช้กับ EP{lastEp} ซึ่งเป็นตอนสุดท้าย เล่าตามปมปิดท้ายของตอนนั้นในหมุดยึด): {rule}"
+  ],
+  "step2.ending.epedit": [
+   "",
+   "★ ตอนนี้คือตอนสุดท้ายของเรื่อง — ตอนจบที่ผู้ใช้เลือก (ทับกฎ ปมท้ายตอนต้องยังสานต่อตอนถัดไป ถ้าขัดกัน): {line}"
+  ],
+  "step2.ending.global": [
+   "",
+   "★ ตอนสุดท้าย (EP{lastEp}) ต้องจบตามแบบที่ผู้ใช้เลือก: {line}"
+  ],
+  "step2.ending.shotLast": [
+   "",
+   "LAST SCENE OF THE WHOLE STORY: {rule} The last shot and the last line close the story: no new goal, no new problem, no hook. This overrides the rule that the last shot is a cliffhanger."
+  ],
+  "step2.ending.shotNext": [
+   "",
+   "★ ตอนนี้เป็นตอนล่าสุด แต่ยังไม่ใช่ตอนจบของทั้งเรื่อง (ผู้ใช้เลือกจบแบบมีตอนต่อไป — ทับคำว่า ปิดสนิทไม่ทิ้งปม ด้านบน): คลี่ความขัดแย้งของตอนนี้ให้สะใจ แล้วช็อตท้ายสุด = cliffhanger แรงไปตอนต่อไปตามกฎช็อตท้าย · {rule}"
+  ],
+  "step2.ending.ctxOpen": [
+   " (ตอนสุดท้ายของเรื่อง: ช็อตท้ายต้องปิดเรื่อง ไม่ใช่ปมไปตอนหน้า)"
+  ],
+  "step2.ending.shotMore": [
+   "",
+   "★ เรื่องนี้ต่อตอนเพิ่มแล้ว ตอนนี้ยังไม่ใช่ตอนจบของทั้งเรื่อง (ทับคำว่า ตอนจบ/ปิดสนิทไม่ทิ้งปม ด้านบน): คลี่ความขัดแย้งของตอนนี้ให้สะใจ แล้วช็อตท้ายสุด = cliffhanger ไปตอนต่อไปตามปมปิดท้ายของตอนนี้ · {rule}"
   ],
   "step3.asset.character": [
    "Character concept sheet of the SAME person: \"{prompt}\".",
@@ -1093,6 +1262,25 @@
   ],
   "step4.stream.light": [
    ", anamorphic 35mm, rim light, moody color grade"
+  ],
+  "step4.fix.rule": [
+   "Edit the reference image. Keep the same people, faces, hairstyles, clothes, pose, camera angle, framing, background, lighting and art style exactly as they are. Change only this: "
+  ],
+  "step4.ready.sys": [
+   "คุณคือผู้ช่วยตัดต่อหนัง ตอบเป็น JSON ล้วนๆ ไม่มีคำเกริ่น"
+  ],
+  "step4.ready.ask": [
+   "ปรับปรุงช็อตนี้ให้พร้อมเจนเนอเรท ตอบเป็น JSON object เท่านั้น มีเฉพาะคีย์: { {want} }"
+  ],
+  "step4.ready.wantLines": [
+   "\"lines\": อาร์เรย์ของ {\"speaker\": ชื่อคนพูด, \"text\": บทพูด} ไม่เกิน {maxRows} รายการ (รวมหรือตัดบรรทัดได้ แต่ห้ามเพิ่มคนพูดใหม่) แต่ละบรรทัดไม่เกิน 8 คำ รวมทุกบรรทัดไม่เกิน {maxWords} คำ (นับคำแบบสั้นที่สุด คำว่า ไม่ได้ นับเป็น 2 คำ) คงความหมายและลำดับเดิม บทพูดเดิม: {lines}"
+  ],
+  "step4.ready.wantDialogue": [
+   "\"dialogue\": บทพูดกระชับ ไม่เกิน {maxWords} คำ คงความหมายเดิม บทพูดเดิม: {dialogue}"
+  ],
+  "step4.ready.shot": [
+   "ช็อต: ขนาด {size}",
+   "ภาพเดิม: {image}"
   ],
   "step5.video.style": [
    "STYLE: {style}"
